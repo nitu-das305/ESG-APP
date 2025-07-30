@@ -117,7 +117,7 @@ src/
 - `npm run build` - Build the project
 - `npm run test` - Run unit tests
 - `npm run lint` - Run linting
-- `npm run deploy` - Deploy to GitHub Pages
+- `npm run deploy` - Deploy to GitHub Pages.
 
 ### Code Style
 
