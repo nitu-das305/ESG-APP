@@ -2,6 +2,8 @@
 
 A comprehensive Environmental, Social, and Governance (ESG) management application built with Angular. This application provides tools for tracking sustainability metrics, compliance management, stakeholder engagement, and ESG reporting.
 
+**Last Updated**: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+
 ## 🌟 Features
 
 - **Dashboard Analytics**: Real-time ESG metrics and KPIs
