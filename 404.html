@@ -4,11 +4,22 @@
     <meta charset="utf-8">
     <title>ESG-APP</title>
     <script type="text/javascript">
-        // Simple redirect for GitHub Pages
-        window.location.href = '/ESG-APP/';
+        // Handle 404s for Angular routing on GitHub Pages
+        var pathSegmentsToKeep = 1;
+        var l = window.location;
+        var path = l.pathname.replace('/ESG-APP', '');
+        if (path && path !== '/') {
+            l.replace(
+                l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+                '/ESG-APP/?/' + path + l.hash
+            );
+        } else {
+            // If it's the main page, just redirect to the app
+            window.location.href = '/ESG-APP/';
+        }
     </script>
 </head>
 <body>
-    <p>Redirecting to <a href="/ESG-APP/">ESG-APP</a>...</p>
+    <p>Loading ESG-APP...</p>
 </body>
 </html> 

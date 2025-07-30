@@ -11,6 +11,18 @@
   <app-root></app-root>
 
   <script type="text/javascript">
+    // Handle Angular routing for GitHub Pages
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1);
+        window.history.replaceState(null, null,
+            l.pathname + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+
+  <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
